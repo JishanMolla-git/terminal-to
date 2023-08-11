@@ -14,6 +14,7 @@ body{
 
 
 
+
 #inp-field-container{
   display: flex;
   align-items: center;
@@ -46,4 +47,19 @@ body{
 
 #output-wrapper pre {
   color: rgba(255, 255, 255, 0.394);
+}
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  gap: 1rem;
+
+  align-items: center;
+  font-size: smaller;
+}
+
+.fb{
+  height: 222px;
 }

@@ -34,6 +34,9 @@ function handleNonLoginCommands(command) {
     case "help":
       showHelp();
       break;
+    case "banner":
+      displayBanner();
+      break;
     default:
       invalidCommand("Not a valid command bro wtf", command);
       break;
@@ -69,7 +72,11 @@ function login() {
 }
 
 function showHelp() {
-  const helpCommands = "help:  show help\n" + "clear: clear output";
+  const helpCommands =
+    "\nhelp:  show help\n" +
+    "clear: clear output\n" +
+    "banner:   toggle banner\n" +
+    "login:   login to account\n";
   appendStyledText(helpCommands, "coral");
 }
 
@@ -79,6 +86,16 @@ function invalidCommand(message, command) {
 
 function clearOutput() {
   output.innerHTML = "";
+}
+
+function displayBanner() {
+  const banner = document.getElementById("banner");
+
+  if (banner.style.display === "none") {
+    banner.style.display = "flex";
+  } else {
+    banner.style.display = "none";
+  }
 }
 
 function appendStyledText(text, color) {
