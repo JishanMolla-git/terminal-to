@@ -1,0 +1,49 @@
+/* general styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+
+}
+
+body{
+  background-color: rgb(35, 35, 36);
+  color: white;
+}
+
+
+
+#inp-field-container{
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper p:first-child{
+  font-size: larger;
+  color: lightgreen;
+}
+
+.input-wrapper p:nth-child(2) {
+ 
+}
+
+.input-field{
+  outline: none;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#output-wrapper{
+  margin-bottom: 1rem;
+}
+
+#output-wrapper pre {
+  color: rgba(255, 255, 255, 0.394);
+}
